@@ -13,4 +13,4 @@ RUN mkdir builds
 # CMD ["uvicorn", "src.main:app", "--host", "0.0.0.0", "--port", "80", "--lifespan", "on"]
 # CMD ["python", "src/main.py"]
 # If running behind a proxy like Nginx or Traefik add --proxy-headers
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80", "--proxy-headers"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8081", "--proxy-headers"]
